@@ -1,0 +1,5 @@
+* Header Info Mode
+
+This package provides the =header-info= minor mode to display parts of the normal modeline in the header line instead.
+
+It is inspired by [[https://www.reddit.com/r/emacs/comments/i3ff3n/weekly_tipstricketc_thread/g0pm74u][this reddit comment]].

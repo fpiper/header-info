@@ -128,6 +128,7 @@ mouse-3: Toggle minor modes"
         header-line-format          header-info-header-line-format)
   (setq header-info-old-mode-line   mode-line-format
         mode-line-format            header-info-mode-line-format))
+
 (defun turn-off-header-info-mode ()
   (setq header-line-format header-info-old-header-line)
   (setq mode-line-format   header-info-old-mode-line))
@@ -141,8 +142,11 @@ mouse-3: Toggle minor modes"
       (turn-on-header-info-mode)
     (turn-off-header-info-mode)))
 
+(defun turn-on-global-header-info-mode ()
+  (header-info-mode 1))
+
 (define-globalized-minor-mode global-header-info-mode
-  header-info-mode turn-on-header-info-mode)
+  header-info-mode turn-on-global-header-info-mode)
 
 
 (provide 'header-info)
